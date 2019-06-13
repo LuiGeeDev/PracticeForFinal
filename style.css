@@ -1,0 +1,175 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  padding: 20px;
+}
+
+header {
+  background: royalblue;
+  color: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: 65px;
+  justify-content: center;
+}
+
+.main, .aside {
+  margin-top: 80px;
+}
+
+body {
+  background: #F2F2F2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+}
+
+.question {
+  height: 40%;
+}
+
+.best {
+  height: 20%;
+  border: 5px solid royalblue;
+  border-radius: 5px;
+}
+
+.reply {
+  height: 15%;
+}
+
+.card {
+  margin: auto auto 10px auto;
+  width: 740px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+  display: flex;
+  background: white;
+}
+
+.writer {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end; 
+  align-items: flex-end;
+  flex: 1;
+}
+
+.writer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.upvote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.vote-btn, .votes {
+  color: royalblue;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.vote-btn:active {
+  color: #F4AB42;
+}
+
+.voted span {
+  color: #F4AB42 !important;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  padding: 0;
+  border: 0;
+  resize: none;
+  outline: none;
+  font-size: 13px;
+  padding: 20px;
+}
+
+.reply-write {
+  padding: 0;
+  width: 780px;
+  height: 300px;
+}
+
+button {
+  bottom: 5px;
+  right: 5px;
+  border: 0;
+  background: royalblue;
+  color: white;
+  font-size: 50px;
+  line-height: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: absolute;
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition-duration: 0.1s;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-small {
+  background: white;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.content {
+  display: flex;
+}

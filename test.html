@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>메뉴</li>
+          <li>메뉴</li>
+          <li>메뉴</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="main">
+        <div class="question card">
+          <div>
+            <h1>님들 기생충 스포일러 당함요</h1>
+            <p>아 개억울함 ㅠㅠㅠㅠㅠㅠㅠㅠ 거짓말이지 거짓말이라고 해줘요</p>
+          </div>
+          <div class="writer">
+            <p>글쓴이</p>
+            <p>어제</p>
+          </div>
+        </div>
+        <div class="best card">
+          <div class="upvote">
+            <span class="vote-btn">▲</span>
+            <span class="votes">89</span>
+          </div>
+          <div>
+            <h2>채택 답변</h2>
+            <p>그 거짓말인 것도 스포일러입니다</p>
+          </div>
+          <div class="writer">
+            <p>글쓴이</p>
+            <p>어제</p>
+          </div>
+        </div>
+        <div class="reply card">
+          <div class="upvote">
+            <span class="vote-btn">▲</span>
+            <span class="votes">20</span>
+          </div>
+          <p>ㅋ 난 보고 옴 이미</p>
+          <div class="writer">
+            <p>글쓴이</p>
+            <p>어제</p>
+          </div>
+        </div>
+        <div class="reply card">
+          <div class="upvote voted">
+            <span class="vote-btn">▲</span>
+            <span class="votes">3</span>
+          </div>
+          <p>절름발이가 범인임</p>
+          <div class="writer">
+            <p>글쓴이</p>
+            <p>어제</p>
+          </div>
+        </div>
+        <div class="card reply-write">
+          <form>
+            <textarea class="textarea"></textarea>
+            <button id="button">+</button>
+          </form>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="card-small">
+          <span>뭐가 되든</span>
+        </div>
+        <div class="card-small">
+          <span>아무튼</span>
+        </div>
+        <div class="card-small">
+          <span>옆에 들어갈 애들</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      const button = document.querySelector("#button");
+      button.onclick = function(event) {
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

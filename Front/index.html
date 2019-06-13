@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #top-nav {
+        background-color: white !important;
+        color: black;
+        border-bottom: 1px solid black;
+      }
+
+      .sidebar {
+        border-right: 1px solid black;
+        min-height: 100vh;
+        width: 210px;
+        padding-top: 30px;
+      }
+
+      .btn-primary {
+        border: 1px solid #f39c12;
+        background-color: white;
+        color: #f39c12;
+      }
+
+      .btn-primary:hover {
+        border: 1px solid #d48c18;
+        background-color: #faae33;
+      }
+
+      .main-menu {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <nav
+            id="top-nav"
+            class="navbar navbar-expand navbar-light bg-light justify-content-end align-items-end"
+          >
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="far fa-envelope fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="far fa-user fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="far fa-bell fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-sign-out-alt fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-3 col-lg-2">
+          <div class="sidebar">
+            <div class="logo justify-content-center text-center">
+              <!-- <i class="fas fa-desktop fa-4x"></i> -->
+            </div>
+            
+            <div class="my-info justify-content-center text-center">
+              <img src="https://via.placeholder.com/80" />
+              <h5>이강인</h5>
+              <div class="my-btn">
+                <button type="button" class="btn btn-primary">내 정보</button>
+                <button type="button" class="btn btn-primary">로그아웃</button>
+              </div>
+            </div>
+            <hr />
+            <div class="main-menu">
+              <div class="row mx-0 ml-4 mb-4">
+                <div class="col-5">
+                  <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                </div>
+                <div class="col-7">
+                  <span class="menu-description"><b>내 클래스</b></span>
+                </div>
+              </div>
+              <div class="row mx-0 ml-4 mb-4">
+                <div class="col-5">
+                  <i class="far fa-question-circle fa-2x"></i>
+                </div>
+                <div class="col-7">
+                  <span class="menu-description"><b>스택</b></span>
+                </div>
+              </div>
+              <div class="row mx-0 ml-4 mb-4">
+                <div class="col-5">
+                  <i class="fas fa-film fa-2x"></i>
+                </div>
+                <div class="col-7">
+                  <span class="menu-description"><b>동영상</b></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
