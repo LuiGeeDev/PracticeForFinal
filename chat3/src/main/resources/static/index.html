@@ -16,13 +16,13 @@
   <div class="noti">알림<span id="noti">0</span></div>
   <ul>
     <li>
-      <a href="room">1번</a> <span class="new"></span>
+      <a href="room">1번</a> <span id="new1"></span>
     </li>
     <li>
-      <a href="room?id=2">2번</a>
+      <a href="room?id=2">2번</a> <span id="new2"></span>
     </li>
     <li>
-      <a href="room?id=3">3번</a>
+      <a href="room?id=3">3번</a> <span id="new3"></span>
     </li>
   </ul>
   <script>
@@ -36,8 +36,17 @@
       });
 
       client.subscribe("/topic/room/1", function(data) {
-        $(".new").text("new");
+        $("#new1").text("new");
       });
+
+      client.subscribe("/topic/room/2", function(data) {
+        $("#new2").text("new");
+      });
+
+      client.subscribe("/topic/room/3", function(data) {
+        $("#new3").text("new");
+      });
+
     });
   </script>
 </body>

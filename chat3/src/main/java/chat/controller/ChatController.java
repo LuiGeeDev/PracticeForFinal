@@ -21,7 +21,7 @@ public class ChatController {
 
   @MessageMapping("/message")
   public void message(Message message) throws InterruptedException {
-    Thread.sleep(500);
+    Thread.sleep(300);
     template.convertAndSend("/topic/room/" + message.getRoomId(), message);
   }
 
