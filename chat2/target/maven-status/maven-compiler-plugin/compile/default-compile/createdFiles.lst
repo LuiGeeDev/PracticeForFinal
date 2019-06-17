@@ -1,0 +1,5 @@
+kr\or\bit\chat\container\Message.class
+kr\or\bit\chat\app\ChatApplication.class
+kr\or\bit\chat\controller\ChatController.class
+kr\or\bit\chat\controller\RoomController.class
+kr\or\bit\chat\config\SocketConfig.class
