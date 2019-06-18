@@ -31,9 +31,7 @@ public class HomeController {
   public String home(Model model, HttpSession session) {
     BoardDao boardDao = sqlsession.getMapper(BoardDao.class);
     List<Board> boardList = boardDao.getList();
-    Member member = (Member) session.getAttribute("user");
     
-    model.addAttribute("user", member);
     model.addAttribute("boardList", boardList);
     return "home";
   }
@@ -74,12 +72,14 @@ public class HomeController {
   
   @GetMapping("/board/{boardId}")
   public String detail(@PathVariable int boardId, Model model, HttpSession session) {
+    if (session.getAttribute("user") == null) {
+      return "redirect:/";
+    }
     BoardDao boardDao = sqlsession.getMapper(BoardDao.class);
     Board board = boardDao.getBoard(boardId);
     CommentDao commentDao = sqlsession.getMapper(CommentDao.class);
     List<Comment> commentList = commentDao.getComments(boardId);
 
-    model.addAttribute("user", (Member) session.getAttribute("user"));
     model.addAttribute("commentList", commentList);
     model.addAttribute("board", board);
     return "board";
@@ -93,5 +93,11 @@ public class HomeController {
     commentDao.writeComment(comment);
     
     return "redirect:/board/" + boardId;
+  }
+  
+  @GetMapping("/logout")
+  public String logout(HttpSession session) {
+    session.invalidate();
+    return "redirect:/";
   }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="example" v-on:contextmenu="ctxStop">
+    <a href="https://facebook.com" th:href="@{//facebook.com}" @click="confirmFB">페이스북</a>
+  </div>
+  <div th:text="'흠 인터레스팅'"></div>
+  <div th:text="${text}"></div>
+  <script>
+      var vm = new Vue({
+        el : "#example",
+        methods : {
+         ctxStop : function(e) {
+            e.preventDefault();
+          },
+          confirmFB : function(e) {
+            if (!confirm("페이스북으로 가까 마까?")) {
+              e.preventDefault();
+            }
+          }
+        }
+      });
+    </script>
+</body>
+</html>
